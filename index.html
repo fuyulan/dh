@@ -411,6 +411,28 @@ var s=document.createElement('script');
 s.src='/chat.js';
 document.body.append(s);
 </script>-->
-
+		<!--禁止F12 CTRL+U  CTRL+S 鼠标右键 鼠标手势代码-->
+<script type="text/javascript">
+document.onkeydown=function(){
+    var e = window.event||arguments[0];
+    if(e.keyCode==123){
+    	alert('如果您喜欢本站，请按Ctrl+D添加到收藏夹！');
+            return false;
+    }else if((e.ctrlKey)&&(e.shiftKey)&&(e.keyCode==73)){
+    	alert('如果您喜欢本站，请按Ctrl+D添加到收藏夹！');
+            return false;
+    }else if((e.ctrlKey)&&(e.keyCode==85)){
+            alert('如果您喜欢本站，请按Ctrl+D添加到收藏夹！');
+            return false;
+    }else if((e.ctrlKey)&&(e.keyCode==83)){
+           alert('如果您喜欢本站，请按Ctrl+D添加到收藏夹！');
+           return false;
+    }
+}
+document.oncontextmenu=function(){
+	alert('如果您喜欢本站，请按Ctrl+D添加到收藏夹！');
+    return false;
+}
+</script>
 
 </body></html>
